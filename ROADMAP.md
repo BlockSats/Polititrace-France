@@ -9,12 +9,26 @@
 - validation et tests ;
 - modèles d'issues et CI.
 
+## v0.2a — Démonstrateur vertical minimal
+
+- sélectionner un seul thème politique comparable ;
+- structurer quelques engagements sourcés ;
+- relier ces engagements à un petit nombre de scrutins officiels ;
+- résoudre les entités et groupes uniquement au niveau nécessaire ;
+- expliquer chaque rapprochement et ses limites ;
+- publier une démonstration compréhensible sans infrastructure lourde.
+
+Cette étape sert à prouver l’utilité du projet avant la généralisation. Voir l’[issue #14](https://github.com/BlockSats/Polititrace-France/issues/14) et l’[ADR sur la complexité progressive](docs/decisions/0004-progressive-complexity.md).
+
 ## v0.2 — Parlement
 
-- collecteurs XVe, XVIe et XVIIe législatures ;
+- premier collecteur centré sur la XVe législature ;
 - députés, groupes, scrutins et positions individuelles ;
-- résolution des changements de groupe ;
+- résolution temporelle minimale des changements de groupe ;
+- validation sur un échantillon avant import exhaustif ;
 - statistiques descriptives documentées.
+
+L’extension aux XVIe et XVIIe législatures intervient seulement après validation du premier adaptateur.
 
 ## v0.3 — Programmes
 
