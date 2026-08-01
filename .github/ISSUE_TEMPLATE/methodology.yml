@@ -1,0 +1,27 @@
+name: Proposer ou contester une méthode
+about: Indicateur, biais potentiel, protocole ou test de sensibilité
+title: "[Méthode] "
+labels: [methodology, discussion]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question méthodologique
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposition ou critique
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Exemples appliqués à plusieurs familles
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Références

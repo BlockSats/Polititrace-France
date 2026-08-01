@@ -1,0 +1,141 @@
+[
+  {
+    "id": "rn",
+    "display_name": "Front national / Rassemblement national",
+    "scope_start": "2017-01-01",
+    "entities": [
+      {
+        "kind": "party",
+        "name": "Front national",
+        "valid_from": null,
+        "valid_to": "2018-05-31"
+      },
+      {
+        "kind": "party",
+        "name": "Rassemblement national",
+        "valid_from": "2018-06-01",
+        "valid_to": null
+      },
+      {
+        "kind": "parliamentary_status",
+        "name": "Députés non-inscrits associés",
+        "legislature": 15
+      },
+      {
+        "kind": "parliamentary_group",
+        "name": "Rassemblement national",
+        "legislature": 16
+      },
+      {
+        "kind": "parliamentary_group",
+        "name": "Rassemblement national",
+        "legislature": 17
+      }
+    ],
+    "verification_status": "seed_needs_primary_sources"
+  },
+  {
+    "id": "lfi",
+    "display_name": "La France insoumise",
+    "scope_start": "2017-01-01",
+    "entities": [
+      {
+        "kind": "party",
+        "name": "La France insoumise",
+        "valid_from": null,
+        "valid_to": null
+      },
+      {
+        "kind": "parliamentary_group",
+        "name": "La France insoumise",
+        "legislature": 15
+      },
+      {
+        "kind": "parliamentary_group",
+        "name": "La France insoumise - NUPES",
+        "legislature": 16
+      },
+      {
+        "kind": "parliamentary_group",
+        "name": "La France insoumise - Nouveau Front populaire",
+        "legislature": 17
+      }
+    ],
+    "verification_status": "seed_needs_primary_sources"
+  },
+  {
+    "id": "presidential_bloc",
+    "display_name": "En Marche / LREM / Renaissance / EPR",
+    "scope_start": "2017-01-01",
+    "entities": [
+      {
+        "kind": "party",
+        "name": "En Marche",
+        "valid_from": null,
+        "valid_to": "2017-05-07"
+      },
+      {
+        "kind": "party",
+        "name": "La République en marche",
+        "valid_from": "2017-05-08",
+        "valid_to": "2022-09-16"
+      },
+      {
+        "kind": "party",
+        "name": "Renaissance",
+        "valid_from": "2022-09-17",
+        "valid_to": null
+      },
+      {
+        "kind": "parliamentary_group",
+        "name": "La République en Marche",
+        "legislature": 15
+      },
+      {
+        "kind": "parliamentary_group",
+        "name": "Renaissance",
+        "legislature": 16
+      },
+      {
+        "kind": "parliamentary_group",
+        "name": "Ensemble pour la République",
+        "legislature": 17
+      }
+    ],
+    "verification_status": "seed_needs_primary_sources"
+  },
+  {
+    "id": "ps",
+    "display_name": "Parti socialiste et groupes associés",
+    "scope_start": "2017-01-01",
+    "entities": [
+      {
+        "kind": "party",
+        "name": "Parti socialiste",
+        "valid_from": null,
+        "valid_to": null
+      },
+      {
+        "kind": "parliamentary_group",
+        "name": "Nouvelle Gauche",
+        "legislature": 15
+      },
+      {
+        "kind": "parliamentary_group",
+        "name": "Socialistes et apparentés",
+        "legislature": 15
+      },
+      {
+        "kind": "parliamentary_group",
+        "name": "Socialistes et apparentés",
+        "legislature": 16
+      },
+      {
+        "kind": "parliamentary_group",
+        "name": "Socialistes et apparentés",
+        "legislature": 17
+      }
+    ],
+    "verification_status": "seed_needs_primary_sources"
+  }
+]
