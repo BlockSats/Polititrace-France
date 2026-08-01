@@ -1,0 +1,52 @@
+[
+  {
+    "id": "assemblee_open_data_votes",
+    "name": "Assemblée nationale — données ouvertes des scrutins",
+    "url": "https://data.assemblee-nationale.fr/travaux-parlementaires/votes",
+    "producer": "Assemblée nationale",
+    "category": "parliament",
+    "evidence_level": 1,
+    "redistribution": "verify_source_terms",
+    "status": "registered"
+  },
+  {
+    "id": "assemblee_open_data_actors",
+    "name": "Assemblée nationale — députés et organes",
+    "url": "https://data.assemblee-nationale.fr/acteurs/deputes-en-exercice",
+    "producer": "Assemblée nationale",
+    "category": "parliament",
+    "evidence_level": 1,
+    "redistribution": "verify_source_terms",
+    "status": "registered"
+  },
+  {
+    "id": "cnccfp_parties",
+    "name": "CNCCFP — comptes des partis et groupements politiques",
+    "url": "https://cnccfp.fr/partis-politiques/",
+    "producer": "CNCCFP",
+    "category": "finance",
+    "evidence_level": 1,
+    "redistribution": "verify_source_terms",
+    "status": "registered"
+  },
+  {
+    "id": "arcom_pluralism",
+    "name": "Arcom — pluralisme et temps de parole",
+    "url": "https://www.arcom.fr/temps-parole",
+    "producer": "Arcom",
+    "category": "media",
+    "evidence_level": 1,
+    "redistribution": "verify_source_terms",
+    "status": "registered"
+  },
+  {
+    "id": "interieur_elections",
+    "name": "Ministère de l'Intérieur — résultats électoraux",
+    "url": "https://www.resultats-elections.interieur.gouv.fr/",
+    "producer": "Ministère de l'Intérieur",
+    "category": "elections",
+    "evidence_level": 1,
+    "redistribution": "verify_source_terms",
+    "status": "registered"
+  }
+]
