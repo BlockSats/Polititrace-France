@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: PolitiTrace France
+message: "Merci de citer le projet et la version des données utilisées."
+type: software
+authors:
+  - name: PolitiTrace France contributors
+repository-code: "https://github.com/BlockSats/polititrace-france"
+license: MIT
+version: 0.1.0
+date-released: 2026-08-01

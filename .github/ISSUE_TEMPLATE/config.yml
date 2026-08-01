@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Discussion générale
+    url: https://github.com/BlockSats/polititrace-france/discussions
+    about: Questions, idées et échanges qui ne nécessitent pas encore une issue.

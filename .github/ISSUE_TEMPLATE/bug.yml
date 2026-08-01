@@ -1,0 +1,22 @@
+name: Signaler un bug
+about: Erreur dans le code, une donnée ou un affichage
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Que se passe-t-il et quel résultat était attendu ?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Commandes, données et étapes minimales.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Source ou preuve
+      description: Ajouter une source primaire lorsque le bug concerne une donnée politique.

@@ -1,0 +1,39 @@
+name: Proposer une source de données
+about: Ajouter une source officielle, partisane, médiatique ou scientifique
+title: "[Source] "
+labels: [data, needs-review]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: URL officielle
+    validations:
+      required: true
+  - type: input
+    id: producer
+    attributes:
+      label: Producteur
+    validations:
+      required: true
+  - type: textarea
+    id: coverage
+    attributes:
+      label: Contenu et période couverte
+    validations:
+      required: true
+  - type: textarea
+    id: licence
+    attributes:
+      label: Licence ou conditions de réutilisation
+    validations:
+      required: true
+  - type: dropdown
+    id: families
+    attributes:
+      label: Couverture
+      options:
+        - Les quatre familles
+        - Une ou plusieurs familles seulement
+        - Sans objet
+    validations:
+      required: true
