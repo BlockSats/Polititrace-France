@@ -1,51 +1,172 @@
 # PolitiTrace France
 
-> Observatoire citoyen open source des programmes, déclarations, votes, finances et traitements médiatiques de la vie politique française.
+> **Prototype citoyen open source visant à relier les programmes, déclarations, votes, finances et traitements médiatiques des forces politiques françaises.**
 
 [![Licence: MIT](https://img.shields.io/badge/Licence-MIT-green.svg)](LICENSE)
 [![Python 3.12+](https://img.shields.io/badge/Python-3.12%2B-blue.svg)](pyproject.toml)
 [![Contributions bienvenues](https://img.shields.io/badge/contributions-bienvenues-brightgreen.svg)](CONTRIBUTING.md)
+[![Statut: expérimental](https://img.shields.io/badge/statut-expérimental-orange.svg)](ROADMAP.md)
 
-## Pourquoi ce projet ?
+## État réel du projet
 
-PolitiTrace France vise à rendre les affirmations politiques **traçables, comparables et auditables**. Le projet ne cherche pas à décider quel parti « a raison » et ne produit pas de note idéologique unique.
+**PolitiTrace France est actuellement un projet en phase d’amorçage — version 0.1.**
 
-Chaque résultat important doit distinguer :
+Il ne faut pas le présenter comme un observatoire déjà opérationnel. Le dépôt contient aujourd’hui les fondations nécessaires pour essayer d’en construire un de manière ouverte, vérifiable et reproductible.
 
-1. la donnée brute ;
-2. le calcul reproductible ;
-3. l'interprétation humaine ou assistée par IA ;
-4. le niveau de confiance et les limites.
+### Ce qui fonctionne déjà
 
-## Périmètre initial
+- une licence open source MIT ;
+- une méthodologie initiale publique ;
+- des règles de gouvernance, de contribution et de correction ;
+- une politique de provenance et de réutilisation des données ;
+- un catalogue historique initial de quatre familles politiques ;
+- un registre des premières sources officielles ;
+- une petite interface en ligne de commande pour consulter et valider ces catalogues ;
+- des tests automatisés et une intégration continue GitHub ;
+- une feuille de route et des issues ouvertes aux contributions.
 
-Période principale : **1er janvier 2017 à aujourd'hui**.
+### Ce qui n’existe pas encore
 
-Familles politiques suivies dans le MVP :
+- aucun collecteur complet des votes de l’Assemblée nationale ;
+- aucune base consolidée de programmes électoraux ;
+- aucun rapprochement automatisé entre promesses, déclarations et votes ;
+- aucune analyse financière automatisée des partis ;
+- aucun corpus médiatique constitué par le projet ;
+- aucune mesure publiée du traitement médiatique ;
+- aucun système de fact-checking autonome ;
+- aucun tableau de bord public ;
+- aucun classement ou résultat politique produit par PolitiTrace ;
+- aucune intelligence artificielle d’analyse politique opérationnelle dans le dépôt.
+
+Les éléments ci-dessus sont des **objectifs de recherche et de développement**, pas des fonctionnalités disponibles.
+
+## Pourquoi lancer ce projet ?
+
+De nombreux outils utiles existent déjà, mais ils répondent généralement à une partie du problème :
+
+| Projet ou source | Ce qu’il apporte principalement |
+|---|---|
+| [NosDéputés.fr](https://www.nosdeputes.fr/) | Activité parlementaire : interventions, amendements, questions, présence et travaux des députés |
+| [Datan](https://datan.fr/) | Votes, positions des groupes, participation, loyauté et proximité parlementaire |
+| [Manifesto Project](https://manifesto-project.wzb.eu/) | Corpus international de programmes électoraux codés et comparables |
+| [CNCCFP](https://cnccfp.fr/partis-politiques/) | Comptes officiels et financement des partis politiques français |
+| [Arcom](https://www.arcom.fr/temps-parole) | Données officielles sur le pluralisme audiovisuel et les temps de parole |
+| [Media Cloud](https://www.mediacloud.org/) | Recherche et analyse de grands corpus de presse en ligne |
+| [GDELT](https://www.gdeltproject.org/) | Suivi mondial et à grande échelle de l’actualité et des événements médiatisés |
+
+PolitiTrace ne cherche pas à remplacer ces projets ni à reproduire inutilement leurs fonctions.
+
+## Est-ce que PolitiTrace fait davantage que ce qui existe ?
+
+### Aujourd’hui : non
+
+Dans son état actuel, PolitiTrace ne fait pas davantage que ces outils. Il fournit seulement un cadre initial, du code de validation et une proposition de méthode commune.
+
+### Ce qu’il pourrait apporter si le projet aboutit
+
+L’apport envisagé serait de **relier dans une même chronologie plusieurs types de données aujourd’hui dispersés** :
+
+```text
+Programme électoral
+        ↓
+Déclarations publiques
+        ↓
+Votes, amendements et décisions
+        ↓
+Évolution des positions
+        ↓
+Finances du parti
+        ↓
+Visibilité et cadrage médiatiques
+```
+
+La valeur ajoutée potentielle serait donc moins de créer une nouvelle source de données que de construire une couche de rapprochement permettant :
+
+- de suivre une même famille politique depuis 2017 malgré les changements de noms, groupes et coalitions ;
+- de distinguer parti juridique, groupe parlementaire, coalition, candidat et élu ;
+- de relier un engagement à des actes parlementaires réellement observables ;
+- de comparer le discours avec les votes sans confondre pouvoir et opposition ;
+- de mettre les finances, l’activité politique et la médiatisation dans un même contexte ;
+- de rendre chaque résultat traçable jusqu’à ses sources et à son code de calcul ;
+- de publier aussi les incertitudes, contradictions et limites ;
+- de permettre à d’autres de reproduire, contester ou améliorer les analyses.
+
+Cette valeur ajoutée reste à démontrer par un prototype fonctionnel.
+
+## Ce que le projet ne veut pas devenir
+
+PolitiTrace ne doit pas être :
+
+- une IA qui décide quel parti dit la vérité ;
+- un outil de propagande en faveur ou contre une formation ;
+- un classement général des « meilleurs » et « pires » partis ;
+- un système qui attribue une intention aux médias à partir d’un simple écart statistique ;
+- une boîte noire dont les sources ou calculs seraient inaccessibles ;
+- un agrégateur qui copie des articles protégés sans respecter leurs droits ;
+- un substitut au travail des journalistes, chercheurs, juristes ou organismes de contrôle.
+
+## Questions auxquelles un futur prototype pourrait répondre
+
+| Question | Éléments nécessaires |
+|---|---|
+| Un groupe vote-t-il conformément à ses engagements ? | Programmes, scrutins, amendements et chronologie |
+| Une position politique a-t-elle changé ? | Documents datés, déclarations et votes successifs |
+| Un parti est-il financièrement fragile ? | Comptes CNCCFP, actifs, dettes, trésorerie et résultat |
+| Deux groupes opposés votent-ils parfois ensemble ? | Votes individuels et positions majoritaires |
+| La visibilité médiatique correspond-elle au poids politique ? | Temps de parole, invitations, mentions et variables de contrôle |
+| Un parti est-il davantage traité sous l’angle du fond ou de la polémique ? | Corpus défini, classification documentée et contrôle humain |
+
+Le système pourrait mesurer des différences observables. Il ne pourrait pas, à lui seul, démontrer une intention politique ou éditoriale.
+
+## Périmètre du premier prototype
+
+**Période principale : 1er janvier 2017 à aujourd’hui.**
+
+Quatre familles politiques sont retenues au départ :
 
 - Front national / Rassemblement national ;
 - La France insoumise et ses groupes parlementaires successifs ;
 - En Marche / LREM / Renaissance et le groupe Ensemble pour la République ;
 - Parti socialiste et ses groupes parlementaires successifs.
 
-Axes initiaux : programmes, scrutins parlementaires, amendements, finances, déclarations publiques et exposition médiatique.
+Ce périmètre est volontairement limité. L’objectif est d’abord de vérifier qu’une méthode peut être appliquée de manière cohérente avant de l’étendre à d’autres formations.
 
-## Principes non négociables
+## Principes méthodologiques
 
 - **Sources avant synthèse** : aucune conclusion importante sans référence vérifiable.
 - **Pas de score politique global** : les indicateurs restent séparés et documentés.
-- **Neutralité méthodologique** : mêmes règles de collecte et de mesure pour chaque famille.
-- **Reproductibilité** : les chiffres sont calculés par du code déterministe.
-- **IA sous contrôle** : l'IA extrait et rapproche ; elle ne remplace pas la preuve.
-- **Droit de réponse et correction** : toute erreur documentée doit pouvoir être corrigée publiquement.
-- **Respect des licences** : le code est libre ; les données tierces restent soumises à leurs conditions propres.
+- **Neutralité procédurale** : mêmes règles de collecte et de calcul pour chaque famille.
+- **Contexte institutionnel** : un parti au pouvoir et un parti d’opposition ne sont pas évalués comme s’ils disposaient des mêmes moyens d’action.
+- **Reproductibilité** : les chiffres doivent être calculés par du code déterministe.
+- **IA explicitement signalée** : une sortie de modèle n’est jamais une source primaire.
+- **Droit de correction** : les erreurs et modifications doivent rester visibles.
+- **Respect des licences** : le code libre ne rend pas automatiquement libres les données tierces.
 - **Cœur sans verrou propriétaire** : le fonctionnement essentiel doit rester reproductible avec des composants ouverts.
+
+## Un exemple à critiquer et améliorer
+
+Le dépôt est publié maintenant, avant que le produit soit terminé, pour rendre les choix initiaux visibles et permettre à d’autres personnes de proposer mieux.
+
+Les critiques argumentées sont aussi utiles que le code. Le projet recherche notamment :
+
+- des développeurs Python et data ;
+- des spécialistes de données parlementaires ;
+- des journalistes et chercheurs en sciences politiques ;
+- des statisticiens et spécialistes du traitement automatique du langage ;
+- des juristes sur les données, médias et financements politiques ;
+- des designers et spécialistes de l’accessibilité ;
+- des citoyens prêts à vérifier des sources et des chronologies ;
+- des contradicteurs capables d’identifier les biais de la méthode.
+
+➡️ [Proposer une meilleure méthode ou une autre architecture](https://github.com/BlockSats/Polititrace-France/issues/10)
+
+➡️ [Voir les premières tâches accessibles](https://github.com/BlockSats/Polititrace-France/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 
 ## Démarrage rapide
 
 ```bash
-git clone https://github.com/BlockSats/polititrace-france.git
-cd polititrace-france
+git clone https://github.com/BlockSats/Polititrace-France.git
+cd Polititrace-France
 python -m venv .venv
 source .venv/bin/activate
 pip install -e '.[dev]'
@@ -63,7 +184,7 @@ polititrace validate
 pytest
 ```
 
-## Premières commandes
+## Commandes actuelles
 
 ```bash
 polititrace list-families
@@ -71,44 +192,35 @@ polititrace list-sources
 polititrace validate
 ```
 
-## Comment contribuer
+Ces commandes consultent et valident les catalogues initiaux. Elles ne lancent encore aucune analyse politique.
 
-Il n'est pas nécessaire d'être développeur. Les contributions utiles comprennent :
-
-- vérifier une source ou une date ;
-- documenter un changement de nom ou d'alliance ;
-- proposer un indicateur mesurable ;
-- écrire un test ;
-- améliorer l'accessibilité ou la documentation ;
-- auditer un biais méthodologique.
-
-Commencer par [`CONTRIBUTING.md`](CONTRIBUTING.md), puis consulter les tickets portant le label `good first issue`.
-
-## Structure
+## Structure du dépôt
 
 ```text
 src/polititrace/       bibliothèque et CLI
 tests/                 tests automatisés
 docs/                  méthode, architecture et décisions
-.github/                modèles d'issues, PR et CI
+.github/                modèles d’issues, PR et CI
 scripts/                utilitaires de développement
 ```
 
 ## Feuille de route
 
-- **v0.1** — catalogue historique des familles et registre des sources ;
-- **v0.2** — collecte et normalisation des scrutins de l'Assemblée nationale ;
-- **v0.3** — programmes et engagements structurés ;
-- **v0.4** — comptes CNCCFP et indicateurs financiers ;
-- **v0.5** — corpus médiatique légalement collectable et métriques descriptives ;
-- **v1.0** — observatoire public avec API, tableaux de bord et méthodologie stabilisée.
+- **v0.1 — disponible** : fondations, catalogues, documentation et validation ;
+- **v0.2 — prochaine étape** : collecte et normalisation des scrutins de l’Assemblée nationale ;
+- **v0.3 — envisagée** : programmes et engagements structurés ;
+- **v0.4 — envisagée** : comptes CNCCFP et indicateurs financiers ;
+- **v0.5 — envisagée** : corpus médiatique légalement collectable et métriques descriptives ;
+- **v1.0 — objectif** : observatoire public avec API, tableaux de bord et méthodologie stabilisée.
 
-Voir [`ROADMAP.md`](ROADMAP.md) pour le détail et [`docs/FIRST_ISSUES.md`](docs/FIRST_ISSUES.md) pour les premières contributions.
+Voir [`ROADMAP.md`](ROADMAP.md) et l’[issue de suivi v0.2](https://github.com/BlockSats/Polititrace-France/issues/9).
 
-## Licence
+## Contribution et licence
 
-Le code et la documentation originale sont publiés sous licence **MIT**. Les jeux de données importés ou référencés conservent leur licence et leurs conditions d'utilisation d'origine. Voir [`OPEN_SOURCE_POLICY.md`](OPEN_SOURCE_POLICY.md) et [`DATA_POLICY.md`](DATA_POLICY.md).
+Consulter [`CONTRIBUTING.md`](CONTRIBUTING.md), [`METHODOLOGY.md`](METHODOLOGY.md), [`OPEN_SOURCE_POLICY.md`](OPEN_SOURCE_POLICY.md) et [`DATA_POLICY.md`](DATA_POLICY.md).
+
+Le code et la documentation originale sont publiés sous licence **MIT**. Les données importées ou référencées conservent leurs licences et conditions d’utilisation d’origine.
 
 ## Avertissement
 
-PolitiTrace France est un projet indépendant, non affilié à un parti politique, un média ou une institution publique. Ses analyses ne constituent ni une consigne de vote ni une vérité automatisée.
+PolitiTrace France est un projet indépendant et expérimental, non affilié à un parti politique, un média ou une institution publique. Il ne produit actuellement aucune recommandation électorale, aucun classement politique et aucune conclusion automatisée sur les formations étudiées.
