@@ -23,12 +23,20 @@
 - taxonomie thématique ;
 - interface de validation humaine.
 
-## v0.4 — Finances
+## v0.4 — Transparence des financements
 
-- comptes CNCCFP ;
-- actifs, dettes, trésorerie, résultat annuel ;
-- provenance et réconciliation comptable ;
-- visualisations comparables.
+- comptes d’ensemble et annexes publiés par la CNCCFP ;
+- aide publique, dons, cotisations, contributions d’élus et autres ressources ;
+- actifs, dettes, trésorerie et résultat annuel ;
+- prêts bancaires et identité des prêteurs personnes morales lorsqu’elle est publique ;
+- prêts de personnes physiques suivis uniquement sous forme légalement publiable ;
+- flux entre partis et structures liées ;
+- historique des remboursements, réserves, manquements et décisions officielles ;
+- indicateurs de dépendance, concentration et capacité de remboursement ;
+- signaux d’alerte soumis à validation humaine, sans accusation automatique ;
+- provenance, réconciliation comptable et visualisations comparables.
+
+Voir [`docs/FINANCING_TRANSPARENCY.md`](docs/FINANCING_TRANSPARENCY.md) et l’[issue #12](https://github.com/BlockSats/Polititrace-France/issues/12).
 
 ## v0.5 — Médias
 
